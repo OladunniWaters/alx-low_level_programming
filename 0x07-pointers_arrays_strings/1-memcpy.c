@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * _memcpy - irontnoux2
- * @dest: pointer to char params
- * @src: pointer to char params
- * @n: size
- * Return: *dest
+ * _memset - ironnou
+ * @s: pointer to char params
+ * @b: data to change
+ * @n: index
+ * Return: *s
  */
 
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 
 	for (i = 0; i < n; i++)
 	{
-		dest[i] = src[i];
+		s[i] = b;
 	}
-	return (dest);
+	return (s);
 }
