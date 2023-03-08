@@ -28,4 +28,4 @@ int square(int n, int val)
 	else
 		return (-1);
 
-}	
+}
