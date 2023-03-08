@@ -1,1 +1,1 @@
-0x00. C - Hello, World
+Write a function that prints a string, followed by a new line.
