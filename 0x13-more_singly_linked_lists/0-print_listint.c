@@ -9,8 +9,9 @@
 
 size_t print_listint(const listint_t *h)
 {
-	const listint_t *my_var
-		unsigned int count = 0;
+	const listint_t *my_var;
+	unsigned int count = 0;
+
 	my_var = h;
 	while (my_var)
 	{
@@ -18,5 +19,5 @@ size_t print_listint(const listint_t *h)
 		count++;
 		my_var = my_var->next
 	}
-	return (count)
+	return (count);
 }
