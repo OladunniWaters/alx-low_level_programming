@@ -25,7 +25,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	}
 
 	my_var2 = *head;
-	while (my_var->next)
+	while (my_var->next != NULL)
 		my_var2 = my_var2->next;
 	my_var2->next = my_var;
 	return (my_var);
