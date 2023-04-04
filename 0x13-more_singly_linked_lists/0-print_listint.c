@@ -17,7 +17,7 @@ size_t print_listint(const listint_t *h)
 	{
 		printf("%d\n", my_var->n);
 		count++;
-		my_var = my_var->next
+		my_var = my_var->next;
 	}
 	return (count);
 }
