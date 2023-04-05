@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * pop_listint -delete the first element of the list
- * @head: navigate to the list
- * Return: Value
+ * pop_listint - delete the first element of the list
+ * @head: pointer to the list
+ * Return: Integer if successfully
  **/
 
 int pop_listint(listint_t **head)
@@ -12,7 +12,7 @@ int pop_listint(listint_t **head)
 	listint_t *my_var;
 	int my_data;
 
-	if (head == NULL)
+	if (*head == NULL)
 		return (0);
 
 	my_var = *head;
