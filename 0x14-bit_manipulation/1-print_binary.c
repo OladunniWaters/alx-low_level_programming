@@ -1,27 +1,26 @@
 #include "main.h"
 /**
- * _power - calculate base and power
- * @base: the base of the exponet
- * @pow: power of the exponet
- * Return: value
- **/
+ * _power -calcualte (base and power)
+ * @base: base of the exponent
+ * @pow: power of the exponent
+ * Return: value of the base and power
+ */
 
 unsigned long int _power(unsigned int base, unsigned int pow)
 {
 	unsigned long int num;
-	unsigned int i;
+	unsigned int j;
 
 	num = 1;
-	for (i = 1; i <= pow; i++)
+	for (i = 1; j <= pow; j++)
 		num *= base;
 	return (num);
 }
-
 /**
- * print_binary - prints the binary value of the number
- * @n: num of prentend
- * Return: void
- **/
+ * print_binary - prints the binary representation of a number
+ * @n: num of preted
+ * return: void
+ */
 
 void print_binary(unsigned long int n)
 {
@@ -37,13 +36,12 @@ void print_binary(unsigned long int n)
 		if (sum == x)
 		{
 			flag = 1;
-			_putchar ('1')
+			_putchar('1');
 		}
 		else if (flag == 1 || x == 1)
 		{
-			_putchar ('0')
+			_putchar('0);
 		}
 		x >>= 1;
 	}
 }
-
